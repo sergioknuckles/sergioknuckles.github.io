@@ -66,6 +66,8 @@
   .lojas-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; max-width: 800px; margin: 0 auto 4rem; }
   .loja-card { background: rgba(245,240,232,0.05); border: 1px solid rgba(245,240,232,0.12); padding: 2.5rem 1.5rem; text-decoration: none; color: var(--creme); transition: all 0.3s ease; display: flex; flex-direction: column; align-items: center; gap: 1rem; }
   .loja-card:hover { background: rgba(139,105,20,0.2); border-color: var(--dourado); transform: translateY(-4px); }
+  .loja-em-breve { opacity: 0.5; cursor: default; }
+  .loja-em-breve:hover { background: rgba(245,240,232,0.05); border-color: rgba(245,240,232,0.12); transform: none; }
   .loja-icon { font-size: 2rem; }
   .loja-nome { font-family: 'Jost', sans-serif; font-weight: 400; font-size: 0.85rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--dourado-claro); }
   .loja-desc { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 1.05rem; color: rgba(245,240,232,0.55); line-height: 1.4; }
@@ -120,8 +122,8 @@
     <p class="hero-subtitle">Um mergulho na aliança de Deus com Abraão em Gênesis 15 — e o que as aves que não foram cortadas revelam sobre a redenção em Cristo.</p>
     <p class="hero-autor">Sérgio Moreira &nbsp;·&nbsp; 2026</p>
     <div class="hero-cta-group">
-      <a href="#onde-encontrar" class="btn-primary">Adquirir o livro</a>
-      <a href="#sobre" class="btn-secondary">Conhecer a obra</a>
+      <a href="https://go.hotmart.com/M106552113T" target="_blank" rel="noopener" class="btn-primary">Comprar agora</a>
+      <a href="#onde-encontrar" class="btn-secondary">Ver todas as lojas</a>
     </div>
   </div>
   <div class="hero-book">
@@ -184,9 +186,9 @@
     <h2 class="section-title">Adquira sua cópia</h2>
     <p class="onde-subtitulo">Escolha a plataforma de sua preferência</p>
     <div class="lojas-grid">
-      <a href="SEU_LINK_AMAZON_KINDLE_AQUI" class="loja-card" target="_blank" rel="noopener"><span class="loja-icon">📖</span><span class="loja-nome">Amazon Kindle</span><span class="loja-desc">Versão digital</span><span class="loja-link-text">Acessar →</span></a>
-      <a href="SEU_LINK_HOTMART_AQUI" class="loja-card" target="_blank" rel="noopener"><span class="loja-icon">🔥</span><span class="loja-nome">Hotmart</span><span class="loja-desc">E-book direto</span><span class="loja-link-text">Acessar →</span></a>
-      <a href="SEU_LINK_MERCADO_LIVRE_AQUI" class="loja-card" target="_blank" rel="noopener"><span class="loja-icon">📦</span><span class="loja-nome">Mercado Livre</span><span class="loja-desc">Versão impressa</span><span class="loja-link-text">Acessar →</span></a>
+      <div class="loja-card loja-em-breve"><span class="loja-icon">📖</span><span class="loja-nome">Amazon Kindle</span><span class="loja-desc">Versão digital</span><span class="loja-link-text">Em breve</span></div>
+      <a href="https://go.hotmart.com/M106552113T" class="loja-card" target="_blank" rel="noopener"><span class="loja-icon">🔥</span><span class="loja-nome">Hotmart</span><span class="loja-desc">E-book direto</span><span class="loja-link-text">Acessar →</span></a>
+      <div class="loja-card loja-em-breve"><span class="loja-icon">📦</span><span class="loja-nome">Mercado Livre</span><span class="loja-desc">Versão impressa</span><span class="loja-link-text">Em breve</span></div>
     </div>
   </div>
 </section>
