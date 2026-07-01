@@ -64,6 +64,7 @@
   .onde .section-title { color: var(--creme); margin-bottom: 1rem; }
   .onde-subtitulo { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 1.2rem; color: rgba(245,240,232,0.6); margin-bottom: 4rem; }
   .lojas-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; max-width: 800px; margin: 0 auto 4rem; }
+  .lojas-grid-single { grid-template-columns: 1fr; max-width: 320px; }
   .loja-card { background: rgba(245,240,232,0.05); border: 1px solid rgba(245,240,232,0.12); padding: 2.5rem 1.5rem; text-decoration: none; color: var(--creme); transition: all 0.3s ease; display: flex; flex-direction: column; align-items: center; gap: 1rem; }
   .loja-card:hover { background: rgba(139,105,20,0.2); border-color: var(--dourado); transform: translateY(-4px); }
   .loja-icon { font-size: 2rem; }
@@ -183,10 +184,8 @@
     <p class="section-label">Disponible en</p>
     <h2 class="section-title">Obtén tu copia</h2>
     <p class="onde-subtitulo">Elige tu plataforma preferida</p>
-    <div class="lojas-grid">
-      <a href="SEU_LINK_AMAZON_KINDLE_AQUI" class="loja-card" target="_blank" rel="noopener"><span class="loja-icon">📖</span><span class="loja-nome">Amazon Kindle</span><span class="loja-desc">Edición digital</span><span class="loja-link-text">Acceder →</span></a>
-      <a href="SEU_LINK_HOTMART_AQUI" class="loja-card" target="_blank" rel="noopener"><span class="loja-icon">🔥</span><span class="loja-nome">Hotmart</span><span class="loja-desc">E-book directo</span><span class="loja-link-text">Acceder →</span></a>
-      <a href="SEU_LINK_MERCADO_LIVRE_AQUI" class="loja-card" target="_blank" rel="noopener"><span class="loja-icon">📦</span><span class="loja-nome">Mercado Libre</span><span class="loja-desc">Edición impresa</span><span class="loja-link-text">Acceder →</span></a>
+    <div class="lojas-grid lojas-grid-single">
+      <a href="https://www.amazon.es/dp/B0H73BCH73" class="loja-card" target="_blank" rel="noopener"><span class="loja-icon">📖</span><span class="loja-nome">Amazon Kindle</span><span class="loja-desc">Edición digital</span><span class="loja-link-text">Acceder →</span></a>
     </div>
   </div>
 </section>
