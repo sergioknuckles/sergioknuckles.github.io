@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Las Aves No Partidas — Sérgio Moreira</title>
-<meta name="description" content="Una profunda exploración teológica del pacto de Dios con Abraham en Génesis 15, descubriendo el significado tipológico de las aves no partidas en el arco redentor de la Escritura.">
+<title>As Aves Não Cortadas — Sérgio Moreira</title>
+<meta name="description" content="Um mergulho teológico profundo na aliança de Deus com Abraão em Gênesis 15, explorando a tipologia das aves não cortadas no contexto redentor da Escritura.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
@@ -63,10 +63,14 @@
   .onde .section-label { color: var(--dourado-claro); }
   .onde .section-title { color: var(--creme); margin-bottom: 1rem; }
   .onde-subtitulo { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 1.2rem; color: rgba(245,240,232,0.6); margin-bottom: 4rem; }
+  .idiomas-livro { background: var(--texto); padding: 6rem 2rem; text-align: center; border-top: 1px solid rgba(196,150,42,0.15); }
+  .idiomas-livro .section-label { color: var(--dourado-claro); }
+  .idiomas-livro .section-title { color: var(--creme); margin-bottom: 1rem; max-width: 640px; margin-left: auto; margin-right: auto; }
   .lojas-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; max-width: 800px; margin: 0 auto 4rem; }
-  .lojas-grid-single { grid-template-columns: 1fr; max-width: 320px; }
   .loja-card { background: rgba(245,240,232,0.05); border: 1px solid rgba(245,240,232,0.12); padding: 2.5rem 1.5rem; text-decoration: none; color: var(--creme); transition: all 0.3s ease; display: flex; flex-direction: column; align-items: center; gap: 1rem; }
   .loja-card:hover { background: rgba(139,105,20,0.2); border-color: var(--dourado); transform: translateY(-4px); }
+  .loja-em-breve { opacity: 0.5; cursor: default; }
+  .loja-em-breve:hover { background: rgba(245,240,232,0.05); border-color: rgba(245,240,232,0.12); transform: none; }
   .loja-icon { font-size: 2rem; }
   .loja-nome { font-family: 'Jost', sans-serif; font-weight: 400; font-size: 0.85rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--dourado-claro); }
   .loja-desc { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 1.05rem; color: rgba(245,240,232,0.55); line-height: 1.4; }
@@ -100,6 +104,9 @@
   .hero-title { animation: fadeUp 0.8s 0.15s ease both; }
   .hero-divider { animation: fadeUp 0.8s 0.3s ease both; }
   .hero-subtitle { animation: fadeUp 0.8s 0.4s ease both; }
+  .hero-idiomas { font-family: 'Jost', sans-serif; font-size: 0.8rem; letter-spacing: 0.03em; color: rgba(245,240,232,0.55); margin: 0.6rem 0 0; animation: fadeUp 0.8s 0.35s ease both; }
+  .hero-idiomas a { color: var(--dourado-claro); text-decoration: none; border-bottom: 1px solid rgba(196,150,42,0.4); transition: border-color 0.2s ease; }
+  .hero-idiomas a:hover { border-color: var(--dourado-claro); }
   .hero-autor { animation: fadeUp 0.8s 0.5s ease both; }
   .hero-cta-group { animation: fadeUp 0.8s 0.6s ease both; }
   .book-wrapper { animation: fadeUp 0.8s 0.3s ease both; }
@@ -108,53 +115,54 @@
 <body>
 
 <nav class="lang-nav">
-  <a href="/" class="lang-btn">🇧🇷 PT</a>
+  <a href="/" class="lang-btn active">🇧🇷 PT</a>
   <a href="/en/" class="lang-btn">🇺🇸 EN</a>
-  <a href="/es/" class="lang-btn active">🇪🇸 ES</a>
+  <a href="/es/" class="lang-btn">🇪🇸 ES</a>
 </nav>
 
 <section class="hero">
   <div class="hero-text">
-    <p class="hero-eyebrow">Teología &nbsp;·&nbsp; Pacto &nbsp;·&nbsp; Tipología</p>
-    <h1 class="hero-title">Las Aves<br><em>No Partidas</em></h1>
+    <p class="hero-eyebrow">Teologia &nbsp;·&nbsp; Aliança &nbsp;·&nbsp; Tipologia</p>
+    <h1 class="hero-title">As Aves<br><em>Não Cortadas</em></h1>
+    <p class="hero-idiomas">Disponível também em <a href="https://www.amazon.com/dp/B0H73LWRV6" target="_blank" rel="noopener">🇺🇸 Inglês</a> e <a href="https://www.amazon.es/dp/B0H73BCH73" target="_blank" rel="noopener">🇪🇸 Espanhol</a></p>
     <div class="hero-divider"></div>
-    <p class="hero-subtitle">Un viaje hacia el pacto de Dios con Abraham en Génesis 15 — y lo que las aves no cortadas revelan sobre la redención en Cristo.</p>
+    <p class="hero-subtitle">Um mergulho na aliança de Deus com Abraão em Gênesis 15 — e o que as aves que não foram cortadas revelam sobre a redenção em Cristo.</p>
     <p class="hero-autor">Sérgio Moreira &nbsp;·&nbsp; 2026</p>
     <div class="hero-cta-group">
-      <a href="#donde-comprar" class="btn-primary">Obtener el libro</a>
-      <a href="#acerca" class="btn-secondary">Conocer la obra</a>
+      <a href="https://go.hotmart.com/M106552113T" target="_blank" rel="noopener" class="btn-primary">Comprar agora</a>
+      <a href="#onde-encontrar" class="btn-secondary">Ver todas as lojas</a>
     </div>
   </div>
   <div class="hero-book">
     <div class="book-wrapper">
-      <img src="Capa-Es.jpg" alt="Portada de Las Aves No Partidas — Sérgio Moreira" class="book-img">
+      <img src="Capa.png" alt="Capa do livro As Aves Não Cortadas — Sérgio Moreira" class="book-img">
     </div>
   </div>
 </section>
 
 <section class="versiculo">
   <blockquote>
-    "Cuando el sol se puso y hubo oscuridad, he aquí un horno humeante y una antorcha de fuego que pasó por entre los animales divididos."
-    <cite>Génesis 15:17</cite>
+    "Aconteceu que, quando o sol se punha e havia trevas cerradas, eis que um forno fumegante e uma tocha de fogo passaram por entre aquelas metades."
+    <cite>Gênesis 15:17</cite>
   </blockquote>
 </section>
 
-<section class="sobre" id="acerca">
+<section class="sobre" id="sobre">
   <div class="container">
     <div class="sobre-grid">
       <div class="sobre-texto">
-        <p class="section-label">Acerca del libro</p>
-        <h2 class="section-title">¿Qué volaba sobre el pacto?</h2>
-        <p>En Génesis 15, Abraham parte los animales del pacto por la mitad — pero no corta las aves. Este detalle, aparentemente menor, lleva un peso teológico que recorre toda la Escritura.</p>
-        <p>Este libro investiga el silencio tipológico de las aves intactas: a quiénes representan, por qué no fueron cortadas, y cómo este gesto anticipa la obra expiatoria de Cristo — el portador del pacto que atraviesa la muerte sin ser quebrantado.</p>
-        <p>Enraizado en la exégesis del hebreo bíblico y en diálogo con la tradición teológica reformada, la obra teje conexiones entre el pacto abrahámitico, el sistema levítico y el Nuevo Testamento.</p>
+        <p class="section-label">Sobre a obra</p>
+        <h2 class="section-title">O que estava voando sobre o pacto?</h2>
+        <p>Em Gênesis 15, Abraão parte os animais do pacto ao meio — mas não corta as aves. Esse detalhe, aparentemente menor, carrega uma densidade teológica que atravessa toda a Escritura.</p>
+        <p>Este livro investiga o silêncio tipológico das aves intactas: quem elas representam, por que não foram cortadas, e como esse gesto antecipa a obra expiatória de Cristo — o portador que atravessa a morte sem ser partido.</p>
+        <p>Com base exegética no hebraico bíblico e em diálogo com a tradição teológica reformada, a obra tece conexões entre a aliança abraâmica, o sistema levítico e o Novo Testamento.</p>
       </div>
       <div>
         <div class="temas">
-          <div class="tema-item"><span class="tema-icon">✦</span><div class="tema-content"><h4>Exégesis de Génesis 15</h4><p>Análisis detallado del hebreo original y del contexto del rito de pacto en el Antiguo Oriente Medio.</p></div></div>
-          <div class="tema-item"><span class="tema-icon">✦</span><div class="tema-content"><h4>Tipología y Cristología</h4><p>Cómo las aves no cortadas anticipan la persona y obra de Cristo como portador del pacto.</p></div></div>
-          <div class="tema-item"><span class="tema-icon">✦</span><div class="tema-content"><h4>Conexiones Canónicas</h4><p>Gálatas 3, Hebreos, Apocalipsis — la tipología atraviesa ambos Testamentos con plena coherencia.</p></div></div>
-          <div class="tema-item"><span class="tema-icon">✦</span><div class="tema-content"><h4>Teología del Pacto</h4><p>La soberanía de Dios en la ratificación unilateral del pacto abrahámitico y sus implicaciones soteriológicas.</p></div></div>
+          <div class="tema-item"><span class="tema-icon">✦</span><div class="tema-content"><h4>Exegese de Gênesis 15</h4><p>Análise detalhada do hebraico original e do contexto do rito de aliança no Antigo Oriente Médio.</p></div></div>
+          <div class="tema-item"><span class="tema-icon">✦</span><div class="tema-content"><h4>Tipologia e Cristologia</h4><p>Como as aves não cortadas antecipam a pessoa e obra de Cristo como portador da aliança.</p></div></div>
+          <div class="tema-item"><span class="tema-icon">✦</span><div class="tema-content"><h4>Conexões Canônicas</h4><p>Gálatas 3, Hebreus, Apocalipse — a tipologia atravessa os dois Testamentos em plena coerência.</p></div></div>
+          <div class="tema-item"><span class="tema-icon">✦</span><div class="tema-content"><h4>Teologia da Aliança</h4><p>A soberania de Deus na ratificação unilateral do pacto abraâmico e suas implicações para a soteriologia.</p></div></div>
         </div>
       </div>
     </div>
@@ -165,34 +173,48 @@
   <div class="container">
     <div class="autor-grid">
       <div class="autor-foto-wrapper">
-        <img src="../autor.jpg" alt="Sérgio Moreira, autor" class="autor-foto">
+        <img src="autor.jpg" alt="Sérgio Moreira, autor" class="autor-foto">
         <div class="autor-foto-frame"></div>
       </div>
       <div class="autor-bio">
-        <p class="section-label">El autor</p>
+        <p class="section-label">O autor</p>
         <h2 class="section-title">Sérgio Moreira</h2>
-        <p>Teólogo con Maestría en Teología, profesor de Formación Cristiana y miembro activo de una comunidad presbiteriana. Su trayectoria intelectual está marcada por el estudio profundo de las lenguas bíblicas — hebreo y griego — y un interés particular en la hermenéutica y la tipología del Antiguo Testamento.</p>
-        <p><em>Las Aves No Partidas</em> nace de la convicción de que el Antiguo Testamento no es un mero preludio al Nuevo, sino una presencia rica y articulada del mismo Evangelio — esperando ser leído con ojos que ven a Cristo en cada pacto, en cada rito, en cada detalle.</p>
-        <p>La obra es el fruto de años de investigación, reflexión pastoral y amor profundo por la Palabra.</p>
+        <p>Teólogo com mestrado em Teologia, professor de Formação Cristã e membro ativo de uma comunidade presbiteriana. Seu percurso intelectual é marcado pelo estudo aprofundado das línguas bíblicas — hebraico e grego — e pelo interesse particular em hermenêutica e tipologia do Antigo Testamento.</p>
+        <p><em>As Aves Não Cortadas</em> nasce de uma convicção de que o Antigo Testamento não é apenas prelúdio do Novo, mas presença rica e articulada do mesmo Evangelho — aguardando ser lido com olhos que enxergam Cristo em cada pacto, em cada rito, em cada detalhe.</p>
+        <p>A obra é o fruto de anos de pesquisa, reflexão pastoral e amor profundo pela Palavra.</p>
       </div>
     </div>
   </div>
 </section>
 
-<section class="onde" id="donde-comprar">
+<section class="onde" id="onde-encontrar">
   <div class="container">
-    <p class="section-label">Disponible en</p>
-    <h2 class="section-title">Obtén tu copia</h2>
-    <p class="onde-subtitulo">Elige tu plataforma preferida</p>
-    <div class="lojas-grid lojas-grid-single">
-      <a href="https://www.amazon.es/dp/B0H73BCH73" class="loja-card" target="_blank" rel="noopener"><span class="loja-icon">📖</span><span class="loja-nome">Amazon Kindle</span><span class="loja-desc">Edición digital</span><span class="loja-link-text">Acceder →</span></a>
+    <p class="section-label">Disponível em</p>
+    <h2 class="section-title">Adquira sua cópia</h2>
+    <p class="onde-subtitulo">Escolha a plataforma de sua preferência</p>
+    <div class="lojas-grid">
+      <div class="loja-card loja-em-breve"><span class="loja-icon">📖</span><span class="loja-nome">Amazon Kindle</span><span class="loja-desc">Versão digital</span><span class="loja-link-text">Em breve</span></div>
+      <a href="https://go.hotmart.com/M106552113T" class="loja-card" target="_blank" rel="noopener"><span class="loja-icon">🔥</span><span class="loja-nome">Hotmart</span><span class="loja-desc">E-book direto</span><span class="loja-link-text">Acessar →</span></a>
+      <div class="loja-card loja-em-breve"><span class="loja-icon">📦</span><span class="loja-nome">Mercado Livre</span><span class="loja-desc">Versão impressa</span><span class="loja-link-text">Em breve</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="idiomas-livro" id="outras-edicoes">
+  <div class="container">
+    <p class="section-label">Outras edições</p>
+    <h2 class="section-title">O livro também está disponível em outros idiomas</h2>
+    <p class="onde-subtitulo">Cada edição é uma tradução completa do livro, vendida diretamente na Amazon do respectivo país</p>
+    <div class="lojas-grid">
+      <a href="https://www.amazon.com/dp/B0H73LWRV6" class="loja-card" target="_blank" rel="noopener"><span class="loja-icon">🇺🇸</span><span class="loja-nome">The Uncut Birds</span><span class="loja-desc">Edição em inglês · Amazon Kindle</span><span class="loja-link-text">Comprar →</span></a>
+      <a href="https://www.amazon.es/dp/B0H73BCH73" class="loja-card" target="_blank" rel="noopener"><span class="loja-icon">🇪🇸</span><span class="loja-nome">Las Aves No Partidas</span><span class="loja-desc">Edição em espanhol · Amazon Kindle</span><span class="loja-link-text">Comprar →</span></a>
     </div>
   </div>
 </section>
 
 <footer>
-  <p class="footer-title">Las Aves No Partidas</p>
-  <p class="footer-sub">Sérgio Moreira &nbsp;·&nbsp; Todos los derechos reservados</p>
+  <p class="footer-title">As Aves Não Cortadas</p>
+  <p class="footer-sub">Sérgio Moreira &nbsp;·&nbsp; Todos os direitos reservados</p>
   <div class="footer-social">
     <a href="https://www.instagram.com/sergio.a.m.junior/" target="_blank" rel="noopener" class="social-link" aria-label="Instagram">
       <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
@@ -204,7 +226,7 @@
     </a>
   </div>
   <hr>
-  <p class="footer-copy">Registrado en la Biblioteca Nacional de Brasil &nbsp;·&nbsp; <span id="ano"></span></p>
+  <p class="footer-copy">Registrado na Biblioteca Nacional do Brasil &nbsp;·&nbsp; <span id="ano"></span></p>
 </footer>
 <script>document.getElementById('ano').textContent = new Date().getFullYear();</script>
 </body>
