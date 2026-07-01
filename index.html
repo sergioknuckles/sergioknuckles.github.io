@@ -63,6 +63,9 @@
   .onde .section-label { color: var(--dourado-claro); }
   .onde .section-title { color: var(--creme); margin-bottom: 1rem; }
   .onde-subtitulo { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 1.2rem; color: rgba(245,240,232,0.6); margin-bottom: 4rem; }
+  .idiomas-livro { background: var(--texto); padding: 6rem 2rem; text-align: center; border-top: 1px solid rgba(196,150,42,0.15); }
+  .idiomas-livro .section-label { color: var(--dourado-claro); }
+  .idiomas-livro .section-title { color: var(--creme); margin-bottom: 1rem; max-width: 640px; margin-left: auto; margin-right: auto; }
   .lojas-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; max-width: 800px; margin: 0 auto 4rem; }
   .loja-card { background: rgba(245,240,232,0.05); border: 1px solid rgba(245,240,232,0.12); padding: 2.5rem 1.5rem; text-decoration: none; color: var(--creme); transition: all 0.3s ease; display: flex; flex-direction: column; align-items: center; gap: 1rem; }
   .loja-card:hover { background: rgba(139,105,20,0.2); border-color: var(--dourado); transform: translateY(-4px); }
@@ -101,6 +104,9 @@
   .hero-title { animation: fadeUp 0.8s 0.15s ease both; }
   .hero-divider { animation: fadeUp 0.8s 0.3s ease both; }
   .hero-subtitle { animation: fadeUp 0.8s 0.4s ease both; }
+  .hero-idiomas { font-family: 'Jost', sans-serif; font-size: 0.8rem; letter-spacing: 0.03em; color: rgba(245,240,232,0.55); margin: 0.6rem 0 0; animation: fadeUp 0.8s 0.35s ease both; }
+  .hero-idiomas a { color: var(--dourado-claro); text-decoration: none; border-bottom: 1px solid rgba(196,150,42,0.4); transition: border-color 0.2s ease; }
+  .hero-idiomas a:hover { border-color: var(--dourado-claro); }
   .hero-autor { animation: fadeUp 0.8s 0.5s ease both; }
   .hero-cta-group { animation: fadeUp 0.8s 0.6s ease both; }
   .book-wrapper { animation: fadeUp 0.8s 0.3s ease both; }
@@ -118,6 +124,7 @@
   <div class="hero-text">
     <p class="hero-eyebrow">Teologia &nbsp;·&nbsp; Aliança &nbsp;·&nbsp; Tipologia</p>
     <h1 class="hero-title">As Aves<br><em>Não Cortadas</em></h1>
+    <p class="hero-idiomas">Disponível também em <a href="https://www.amazon.com/dp/B0H73LWRV6" target="_blank" rel="noopener">🇺🇸 Inglês</a> e <a href="https://www.amazon.es/dp/B0H73BCH73" target="_blank" rel="noopener">🇪🇸 Espanhol</a></p>
     <div class="hero-divider"></div>
     <p class="hero-subtitle">Um mergulho na aliança de Deus com Abraão em Gênesis 15 — e o que as aves que não foram cortadas revelam sobre a redenção em Cristo.</p>
     <p class="hero-autor">Sérgio Moreira &nbsp;·&nbsp; 2026</p>
@@ -189,6 +196,18 @@
       <div class="loja-card loja-em-breve"><span class="loja-icon">📖</span><span class="loja-nome">Amazon Kindle</span><span class="loja-desc">Versão digital</span><span class="loja-link-text">Em breve</span></div>
       <a href="https://go.hotmart.com/M106552113T" class="loja-card" target="_blank" rel="noopener"><span class="loja-icon">🔥</span><span class="loja-nome">Hotmart</span><span class="loja-desc">E-book direto</span><span class="loja-link-text">Acessar →</span></a>
       <div class="loja-card loja-em-breve"><span class="loja-icon">📦</span><span class="loja-nome">Mercado Livre</span><span class="loja-desc">Versão impressa</span><span class="loja-link-text">Em breve</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="idiomas-livro" id="outras-edicoes">
+  <div class="container">
+    <p class="section-label">Outras edições</p>
+    <h2 class="section-title">O livro também está disponível em outros idiomas</h2>
+    <p class="onde-subtitulo">Cada edição é uma tradução completa do livro, vendida diretamente na Amazon do respectivo país</p>
+    <div class="lojas-grid">
+      <a href="https://www.amazon.com/dp/B0H73LWRV6" class="loja-card" target="_blank" rel="noopener"><span class="loja-icon">🇺🇸</span><span class="loja-nome">The Uncut Birds</span><span class="loja-desc">Edição em inglês · Amazon Kindle</span><span class="loja-link-text">Comprar →</span></a>
+      <a href="https://www.amazon.es/dp/B0H73BCH73" class="loja-card" target="_blank" rel="noopener"><span class="loja-icon">🇪🇸</span><span class="loja-nome">Las Aves No Partidas</span><span class="loja-desc">Edição em espanhol · Amazon Kindle</span><span class="loja-link-text">Comprar →</span></a>
     </div>
   </div>
 </section>
