@@ -66,7 +66,7 @@
   .idiomas-livro { background: var(--texto); padding: 6rem 2rem; text-align: center; border-top: 1px solid rgba(196,150,42,0.15); }
   .idiomas-livro .section-label { color: var(--dourado-claro); }
   .idiomas-livro .section-title { color: var(--creme); margin-bottom: 1rem; max-width: 640px; margin-left: auto; margin-right: auto; }
-  .lojas-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; max-width: 800px; margin: 0 auto 4rem; }
+  .lojas-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1.5rem; max-width: 900px; margin: 0 auto 4rem; }
   .loja-card { background: rgba(245,240,232,0.05); border: 1px solid rgba(245,240,232,0.12); padding: 2.5rem 1.5rem; text-decoration: none; color: var(--creme); transition: all 0.3s ease; display: flex; flex-direction: column; align-items: center; gap: 1rem; }
   .loja-card:hover { background: rgba(139,105,20,0.2); border-color: var(--dourado); transform: translateY(-4px); }
   .loja-em-breve { opacity: 0.5; cursor: default; }
@@ -195,6 +195,7 @@
     <div class="lojas-grid">
       <div class="loja-card loja-em-breve"><span class="loja-icon">📖</span><span class="loja-nome">Amazon Kindle</span><span class="loja-desc">Versão digital</span><span class="loja-link-text">Em breve</span></div>
       <a href="https://go.hotmart.com/M106552113T" class="loja-card" target="_blank" rel="noopener"><span class="loja-icon">🔥</span><span class="loja-nome">Hotmart</span><span class="loja-desc">E-book direto</span><span class="loja-link-text">Acessar →</span></a>
+      <a href="https://payhip.com/b/ulAxt" class="loja-card" target="_blank" rel="noopener"><span class="loja-icon">📘</span><span class="loja-nome">PayHip</span><span class="loja-desc">E-book direto</span><span class="loja-link-text">Acessar →</span></a>
       <div class="loja-card loja-em-breve"><span class="loja-icon">📦</span><span class="loja-nome">Mercado Livre</span><span class="loja-desc">Versão impressa</span><span class="loja-link-text">Em breve</span></div>
     </div>
   </div>
