@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://asavesnaocortadas.ddns.net/sitemap.xml
+Sitemap: https://asavesnaocortadas.com.br/sitemap.xml
