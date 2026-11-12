@@ -1,0 +1,34 @@
+/* Camada compartilhada: acessibilidade e recursos modernos de CSS (2026-11) */
+@view-transition { navigation: auto; }
+:root { color-scheme: light; }
+html { scroll-behavior: smooth; scroll-padding-top: 1rem; -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+h1, h2, h3, .hero-title, .section-title { text-wrap: balance; }
+p, li, blockquote { text-wrap: pretty; }
+img { max-width: 100%; height: auto; }
+::selection { background: #C4962A; color: #1A1007; }
+:focus-visible { outline: 2px solid #C4962A; outline-offset: 3px; border-radius: 2px; }
+.skip { position: absolute; left: -999px; top: 0; z-index: 1000; background: #C4962A; color: #1A1007; padding: .7rem 1.1rem; font-family: 'Jost', sans-serif; font-size: .85rem; letter-spacing: .05em; text-decoration: none; }
+.skip:focus { left: .5rem; top: .5rem; }
+/* contraste de textos pequenos sobre fundo escuro */
+.footer-copy { color: rgba(245,240,232,.62); }
+.lang-btn { color: rgba(245,240,232,.78); }
+.loja-em-breve { opacity: .65; }
+footer { color: rgba(245,240,232,.62); }
+/* alvos de toque confortáveis */
+.lang-btn { padding: .45rem .6rem; }
+@media (hover: none) { .loja-card:hover { transform: none; } }
+/* entrada suave ao rolar, só onde o navegador suporta e o leitor não pediu menos movimento */
+@supports (animation-timeline: view()) {
+  @media (prefers-reduced-motion: no-preference) {
+    .tema-item, .sobre-texto, .autor-bio { animation: revelar linear both; animation-timeline: view(); animation-range: entry 0% entry 55%; }
+    @keyframes revelar { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: none; } }
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+}
+@media print {
+  .lang-nav, .skip, .hero-cta-group, .cta, .onde, .idiomas-livro, .footer-social { display: none !important; }
+  body { background: #fff; color: #000; }
+}
