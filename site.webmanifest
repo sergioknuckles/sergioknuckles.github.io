@@ -1,0 +1,13 @@
+{
+  "name": "As Aves Não Cortadas — Sérgio Moreira",
+  "short_name": "Aves Não Cortadas",
+  "description": "Livro de teologia sobre Gênesis 15: da aliança com Abraão ao Espírito derramado sobre as nações.",
+  "lang": "pt-BR",
+  "start_url": "/",
+  "display": "minimal-ui",
+  "background_color": "#F5F0E8",
+  "theme_color": "#3D2B0F",
+  "icons": [
+    { "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}
